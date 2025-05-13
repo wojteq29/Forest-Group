@@ -1,0 +1,127 @@
+@media (375px <= width) {
+	.about-us {
+		&__box-text {
+			&-h3 {
+				font-size: 2.4rem;
+			}
+		}
+	}
+}
+
+@media (410px <= width) {
+	.header {
+		height: 60vh;
+
+		&__heading {
+			font-size: 3.2rem;
+		}
+	}
+
+	.about-us {
+		&__box-text {
+			&-h3 {
+				font-size: 2.6rem;
+			}
+		}
+	}
+
+	.popup-msg-sent {
+		min-width: 350px;
+
+		&__btn {
+			margin-top: 1.4em;
+			font-size: 1.6rem;
+		}
+	}
+
+	.subpage-header {
+		height: 40vh;
+	}
+}
+
+@media (500px <= width) {
+	.offers {
+		.offers-box {
+			&__cards {
+				align-items: stretch;
+				margin: 0 2em;
+			}
+
+			&__card {
+				margin: 0 1.5em 1.4em;
+
+				&-btn {
+					padding: 0.5em 5em;
+				}
+			}
+		}
+	}
+}
+
+@media (576px <= width) {
+	.header {
+		&__text {
+			font-size: 2.8rem;
+		}
+
+		&__heading {
+			font-size: 3.6rem;
+		}
+	}
+
+	.about-us {
+		&__box-text {
+			&-h3 {
+				font-size: 2.8rem;
+			}
+
+			&-p {
+				font-size: 1.7rem;
+				line-height: 1.6;
+			}
+		}
+	}
+
+	.hero-img {
+		&__box-heading {
+			font-size: 3.5rem;
+		}
+	}
+
+	.subpage-heading {
+		margin: 2em 0.4em;
+		text-align: center;
+		font-size: 4.6rem;
+	}
+}
+
+@media (667px <= width) {
+	.offers {
+		.offers-box {
+			&__card {
+				margin: 0 3em 1.4em;
+
+				&-btn {
+					padding: 0.5em 8em;
+				}
+			}
+		}
+	}
+
+	.footer {
+		&__brand {
+			margin-bottom: 0.8em;
+		}
+
+		&__boxes {
+			flex-direction: row;
+			justify-content: space-evenly;
+		}
+
+		&__box {
+			&-list {
+				list-style: none;
+			}
+		}
+	}
+}

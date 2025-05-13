@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Forest Group</title>
+    <meta name="description" content="Skontaktuj się z Forest Group - napisz lub odwiedź naszą siedzibę. Jesteśmy do Twojej dyspozycji i chętnie odpowiemy na pytania.">
+    <meta name="keywords" content="kontakt, formularz kontaktowy, mapa">
+    <link rel="canonical" href="">
+    @@include('./components/_links.html')
+</head>
+
+<body>
+
+    @@include('./components/_nav.html', {
+    "home": "index.html",
+    "onas": "index.html#o-nas",
+    "oferta": "index.html#oferta",
+    "kontakt": "#",
+    "kontakt-active": "active"
+    })
+
+
+    <header class="header section subpage-header contact-header" id="home">
+        <div class="wrapper">
+            <h1 class="subpage-heading">Skontaktuj się z nami</h1>
+            <div class="hero-shadow"></div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="wrapper">
+            <section class="contact-form-box">
+                <div class="contact-form-box__left">
+                    <h2 class="section-heading subpage-section-heading">Napisz do nas</h2>
+                    <p class="contact-form-box__left-text">Masz jakieś pytania? Wypełnij formularz, a postaramy się
+                        udzielić najszybszej odpowiedzi!
+                    </p>
+                </div>
+
+                <div class="contact-form-box__right">
+                    <form class="contact-form" action="">
+                        <div class="input-row">
+                            <div class="contact-form__input-box">
+                                <label class="contact-form__label" for="firstname">Imię</label>
+                                <input type="text" class="contact-form__input" name="firstname" id="firstname">
+                                <p class="contact-form__error"></p>
+                            </div>
+                            <div class="contact-form__input-box">
+                                <label class="contact-form__label" for="lastname">Nazwisko</label>
+                                <input type="text" class="contact-form__input" name="lastname" id="lastname">
+                                <p class="contact-form__error"></p>
+                            </div>
+                        </div>
+                        <div class="contact-form__input-box">
+                            <label class="contact-form__label" for="email">Adres e-mail</label>
+                            <input type="mail" class="contact-form__input" name="email" id="email">
+                            <p class="contact-form__error"></p>
+                        </div>
+                        <div class="contact-form__input-box">
+                            <label class="contact-form__label" for="message">Treść wiadomości</label>
+                            <textarea name="message" id="message"
+                                class="contact-form__input contact-form__textarea"></textarea>
+                            <p class="contact-form__error"></p>
+                        </div>
+                        <div class="contact-form__input-box">
+                            <input type="checkbox" id="privacy-policy">
+                            <label for="privacy-policy">Akceptuję <a href="polityka.html" class="privacy-policy-link">politykę prywatności</a></label>
+                        </div>
+                        <div class="contact-form__send-btn-box">
+                            <button class="contact-form__send-btn btn btn-disabled" type="submit" disabled>Wyślij</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="contact-map-box">
+                <h2 class="section-heading contact-section-heading">Znajdź nas na mapie</h2>
+                <div class="contact-map-box__map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.8980500890243!2d19.890269277546565!3d50.08819561337934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1746871491562!5m2!1spl!2spl"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="popup-msg-sent">
+        <i class="fa-regular fa-envelope popup-msg-sent__icon"></i>
+        <p class="popup-msg-sent__text">Wiadomość została wysłana!</p>
+        <button class="btn popup-msg-sent__btn">Zamknij</button>
+    </div>
+
+
+    @@include('./components/_footer.html')
+
+
+    <script src="./dist/js/main.min.js"></script>
+    <script src="./dist/js/contact.min.js"></script>
+</body>
+
+</html>

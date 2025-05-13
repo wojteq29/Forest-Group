@@ -1,0 +1,160 @@
+@media (992px <= width) {
+	.nav-mobile {
+		display: none;
+	}
+
+	.nav-desktop {
+		display: block;
+	}
+
+	.header {
+		height: 40vh;
+		padding-left: 2em;
+		text-align: left;
+		background-image: url('../img/header_1920.jpg');
+		background-position-y: 70%;
+
+		&__heading {
+			font-size: 4.4rem;
+		}
+
+		&__text {
+			margin-bottom: 0;
+		}
+	}
+
+	.section-padding {
+		padding: 5em 1em;
+	}
+
+	.section-heading {
+		margin-bottom: 0.9em;
+		font-size: 4.6rem;
+	}
+
+	.about-us {
+		&__box {
+			display: flex;
+			gap: 3em;
+		}
+
+		&__box-img {
+			width: 50%;
+		}
+
+		&__img {
+			height: 100%;
+		}
+
+		&__box-text {
+			width: 50%;
+
+			&-h3 {
+				margin: 0 0 0.45em;
+				font-size: 3.2rem;
+				line-height: 1.9;
+			}
+		}
+	}
+
+	.footer {
+		text-align: left;
+
+		.wrapper {
+			justify-content: center;
+			flex-direction: row;
+			padding-top: 2em;
+		}
+
+		&__brand {
+			width: 50%;
+			text-align: center;
+			font-size: 6rem;
+		}
+
+		&__boxes {
+			width: 50%;
+		}
+
+		&__copyright {
+			text-align: center;
+		}
+	}
+
+	.subpage-header {
+		height: 30vh;
+	}
+	
+	.subpage-heading {
+		text-align: center;
+	}
+	
+	.contact-header {
+		background-image: url('../img/contact-hero_1920.jpg');
+		background-position-y: 45%;
+	}
+
+	.contact-section-heading {
+		margin-bottom: 0.4em;
+	}
+
+	.contact-form-box {
+		&__left-text {
+			text-align: center;
+			padding-bottom: 0.6em;
+		}
+
+		.contact-form {
+			margin-bottom: 6em;
+
+			&__input-box {
+				margin: 2em 0;
+			}
+
+			&__input {
+				margin-top: 0.4em;
+				padding: 0.8em;
+				width: 100%;
+				font-size: 1.6rem;
+				border-radius: 0;
+				transition: border 0.1s;
+			}
+
+			&__label {
+				font-size: 1.8rem;
+			}
+		}
+	}
+
+	.offers-header {
+		background-image: url('../img/offers-hero_1920.jpg');
+		background-position-y: 65%;
+	}
+
+}
+
+@media (996px <= width) {
+	.subpage-offers {
+		&__text {
+			max-width: 1000px;
+		}
+	}
+}
+
+@media (1200px <= width) {
+	.about-us {
+		&__box {
+			gap: 5em;
+		}
+
+		&__box-text {
+			&-p {
+				line-height: 1.9;
+			}
+		}
+	}
+
+	.hero-img {
+		background-image: url('../img/hero-img_1920.jpg');
+	}
+}

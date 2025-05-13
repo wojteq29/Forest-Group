@@ -1,0 +1,87 @@
+@use 'utilities' as *;
+
+.wrapper {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.burger-btn {
+	position: absolute;
+	top: 1.2em;
+	right: 1.2em;
+	padding: 1em;
+	border: none;
+	background: none;
+	cursor: pointer;
+
+	&__icon {
+		font-size: 4rem;
+		color: $primary-color;
+	}
+}
+
+.close-nav-btn {
+	position: absolute;
+	top: 1.2em;
+	right: 1.6em;
+	padding: 1em;
+	border: none;
+	background: none;
+
+	&__icon {
+		font-size: 4.6rem;
+		color: $dark-color;
+	}
+}
+
+.hero-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #00000093;
+	z-index: -10;
+}
+
+.btn {
+	padding: 0.8em 2em;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	background: $dark-color;
+	border: 1px solid transparent;
+	color: $primary-color;
+	transition: border 0.2s, background-color 0.2s, color 0.2s;
+	cursor: pointer;
+}
+
+.btn:hover {
+	border: 1px solid $dark-color;
+	background-color: transparent;
+	color: $dark-color;
+}
+
+.btn-disabled {
+	background-color: #00000062;
+	cursor: not-allowed;
+}
+
+.btn-disabled:hover {
+	border: 1px solid transparent;
+	background-color: #00000062;
+	color: $primary-color;
+}
+
+.subpage-section-heading {
+	margin-bottom: 0.4em;
+	font-size: 3.4rem;
+}
+
+.subpage-heading {
+	margin: 2em 0.4em;
+	text-align: center;
+	font-size: 3.6rem;
+}

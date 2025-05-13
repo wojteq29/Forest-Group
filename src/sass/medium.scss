@@ -1,0 +1,103 @@
+@use 'utilities' as *;
+
+@media (768px <= width) {
+	.nav-mobile {
+		&__items {
+			padding-top: 9em;
+		}
+	}
+
+	.header {
+		height: 40vh;
+	}
+
+	.section-heading {
+		font-size: 4.4rem;
+	}
+
+	.about-us {
+		&__img {
+			height: 350px;
+			object-fit: cover;
+		}
+
+		&__box-text {
+			&-h3 {
+				font-size: 3rem;
+			}
+
+			&-p {
+				line-height: 1.7;
+				font-size: 1.8rem;
+			}
+		}
+	}
+
+	.hero-img {
+		padding: 7em 2em;
+		background-image: url('../img/hero-img_1280.jpg');
+
+		&__box-heading {
+			font-size: 4.4rem;
+		}
+	}
+
+	.offers {
+		.offers-box {
+			&__cards {
+				flex-direction: row;
+				flex-wrap: wrap;
+				align-items: center;
+				gap: 0 2em;
+				margin: 0;
+			}
+
+			&__card {
+				margin: 1em 0 1.4em;
+				width: 300px;
+
+				&-btn {
+					padding: 0.5em 3.4em;
+				}
+			}
+		}
+	}
+
+	.subpage-header {
+		height: 30vh;
+	}
+
+	.contact-section-heading {
+		margin-bottom: 0.4em;
+	}
+
+	.contact-form-box {
+		&__left-text {
+			margin-bottom: 1.6em;
+			font-size: 1.8rem;
+		}
+
+		.input-row {
+			display: flex;
+			gap: 0 .6em;
+			width: 100%;
+
+			.contact-form__input-box {
+				margin-bottom: 0;
+				width: 100%;
+			}
+
+			.contact-form__input {
+				display: block;
+			}
+		}
+
+		.contact-form__send-btn {
+			padding: 0.8em 5em;
+		}
+	}
+
+	.popup-msg-sent {
+		min-width: 500px;
+	}
+}

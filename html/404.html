@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Group - 404</title>
+    @@include('./components/_links.html')
+</head>
+
+<body>
+    @@include('./components/_nav.html', {
+    "home": "index.html",
+    "onas": "index.html#o-nas",
+    "oferta": "index.html#oferta",
+    "kontakt": "kontakt.html",
+    "kontakt-active": "active"
+    })
+
+    <div class="error-404">
+        <h1 class="error-404__heading">Nie znaleźliśmy takiej strony</h1>
+        <p class="error-404__text">Strona, na którą próbujesz wejść została usunięta lub nie istnieje.</p>
+    </div>
+
+    @@include('./components/_footer.html')
+
+</body>
+
+</html>
