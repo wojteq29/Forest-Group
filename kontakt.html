@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Forest Group</title>
+    <meta name="description" content="Skontaktuj się z Forest Group - napisz lub odwiedź naszą siedzibę. Jesteśmy do Twojej dyspozycji i chętnie odpowiemy na pytania.">
+    <meta name="keywords" content="kontakt, formularz kontaktowy, mapa">
+    <link rel="canonical" href="">
+    <meta name="author" content="Forest Group">
+<link type="image/png" sizes="16x16" rel="icon" href="./dist/img/icons8-tree-16.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/eb09a80b71.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./dist/css/main.min.css">
+
+</head>
+
+<body>
+
+    <nav class="nav nav-mobile">
+    <div class="nav-mobile__brand">
+        <a href="index.html" class="nav-mobile__brand-name"><i class="nav-mobile__brand-logo fa-solid fa-tree"></i> Forest</a>
+    </div>
+
+    <button class="burger-btn" aria-label="Otwórz menu nawigacyjne">
+        <i class="burger-btn__icon fa-solid fa-bars"></i>
+    </button>
+
+    <ul class="nav-mobile__items">
+        <li><a href="index.html" class="nav-mobile__item">Home</a></li>
+        <li><a href="index.html#o-nas" class="nav-mobile__item">O nas</a></li>
+        <li><a href="index.html#oferta" class="nav-mobile__item">Oferta</a></li>
+        <li><a href="#" class="nav-mobile__item">Kontakt</a></li>
+    </ul>
+</nav>
+
+<nav class="nav nav-desktop">
+    <div class="wrapper">
+        <div class="nav-desktop__brand">
+            <a href="index.html"><i class="nav-desktop__brand-logo fa-solid fa-tree"></i> Forest</a>
+        </div>
+        <ul class="nav-desktop__items">
+            <li><a href="index.html" class="nav-desktop__item index.html-active">Home</a></li>
+            <li><a href="index.html#o-nas" class="nav-desktop__item">O nas</a></li>
+            <li><a href="index.html#oferta" class="nav-desktop__item index.html#oferta-active">Oferta</a></li>
+            <li><a href="#" class="nav-desktop__item active">Kontakt</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+    <header class="header section subpage-header contact-header" id="home">
+        <div class="wrapper">
+            <h1 class="subpage-heading">Skontaktuj się z nami</h1>
+            <div class="hero-shadow"></div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="wrapper">
+            <section class="contact-form-box">
+                <div class="contact-form-box__left">
+                    <h2 class="section-heading subpage-section-heading">Napisz do nas</h2>
+                    <p class="contact-form-box__left-text">Masz jakieś pytania? Wypełnij formularz, a postaramy się
+                        udzielić najszybszej odpowiedzi!
+                    </p>
+                </div>
+
+                <div class="contact-form-box__right">
+                    <form class="contact-form" action="">
+                        <div class="input-row">
+                            <div class="contact-form__input-box">
+                                <label class="contact-form__label" for="firstname">Imię</label>
+                                <input type="text" class="contact-form__input" name="firstname" id="firstname">
+                                <p class="contact-form__error"></p>
+                            </div>
+                            <div class="contact-form__input-box">
+                                <label class="contact-form__label" for="lastname">Nazwisko</label>
+                                <input type="text" class="contact-form__input" name="lastname" id="lastname">
+                                <p class="contact-form__error"></p>
+                            </div>
+                        </div>
+                        <div class="contact-form__input-box">
+                            <label class="contact-form__label" for="email">Adres e-mail</label>
+                            <input type="mail" class="contact-form__input" name="email" id="email">
+                            <p class="contact-form__error"></p>
+                        </div>
+                        <div class="contact-form__input-box">
+                            <label class="contact-form__label" for="message">Treść wiadomości</label>
+                            <textarea name="message" id="message"
+                                class="contact-form__input contact-form__textarea"></textarea>
+                            <p class="contact-form__error"></p>
+                        </div>
+                        <div class="contact-form__input-box">
+                            <input type="checkbox" id="privacy-policy">
+                            <label for="privacy-policy">Akceptuję <a href="polityka.html" class="privacy-policy-link">politykę prywatności</a></label>
+                        </div>
+                        <div class="contact-form__send-btn-box">
+                            <button class="contact-form__send-btn btn btn-disabled" type="submit" disabled>Wyślij</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="contact-map-box">
+                <h2 class="section-heading contact-section-heading">Znajdź nas na mapie</h2>
+                <div class="contact-map-box__map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.8980500890243!2d19.890269277546565!3d50.08819561337934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1746871491562!5m2!1spl!2spl"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="popup-msg-sent">
+        <i class="fa-regular fa-envelope popup-msg-sent__icon"></i>
+        <p class="popup-msg-sent__text">Wiadomość została wysłana!</p>
+        <button class="btn popup-msg-sent__btn">Zamknij</button>
+    </div>
+
+
+    <footer class="footer white-section">
+    <div class="wrapper">
+        <p class="footer__brand"><i class="nav-mobile__brand-logo fa-solid fa-tree"></i> Forest</p>
+
+        <div class="footer__boxes">
+            <div class="footer__box">
+                <h3 class="footer__box-title">O nas</h3>
+                <ul class="footer__box-list">
+                    <li class="footer__box-list-item"><a href="#">Historia</a></li>
+                    <li class="footer__box-list-item"><a href="#">Parki</a></li>
+                    <li class="footer__box-list-item"><a href="#">Opinie</a></li>
+                </ul>
+            </div>
+            <div class="footer__box">
+                <h3 class="footer__box-title">Nasza firma</h3>
+                <ul class="footer__box-list">
+                    <li class="footer__box-list-item"><a href="#">Praca</a></li>
+                    <li class="footer__box-list-item"><a href="#">Kadry</a></li>
+                    <li class="footer__box-list-item"><a href="#">Zarząd</a></li>
+                </ul>
+            </div>
+            <div class="footer__box">
+                <h3 class="footer__box-title">Dokumenty</h3>
+                <ul class="footer__box-list">
+                    <li class="footer__box-list-item"><a href="#">Wnioski</a></li>
+                    <li class="footer__box-list-item"><a href="#">Rezerwacje</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer__line"></div>
+
+    <p class="footer__copyright">&copy; <span class="year"></span> Forest Group Company Ltd.</p>
+</footer>
+
+
+    <script src="./dist/js/main.min.js"></script>
+    <script src="./dist/js/contact.min.js"></script>
+</body>
+
+</html>
